@@ -5,6 +5,8 @@
 	<title>David's GIF site</title>
 	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="javascript/js.js" rel="stylesheet" type="text/javaScript">
 
 </head>
 <body>
@@ -75,7 +77,7 @@
         		animalDiv.append(animalImage);
         		
 
-        		$("#mini-box").animate({"right": "100%"}).prepend(animalDiv);
+        		$("#mini-box").prepend(animalDiv);
         	}
 
         })
@@ -97,6 +99,8 @@
 	});
 
 	createButtons();
+
+	
 
 
 
