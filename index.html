@@ -4,25 +4,26 @@
 	<meta charset="UTF-8">
 	<title>David's GIF site</title>
 	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="javascript/js.js" rel="stylesheet" type="text/javaScript">
+	<link href="css/style.css" rel="stylesheet" type="text/css">	
+	
 
 </head>
 <body>
 	<div id="main-container">
 	<header id="main-header">
-		BUTTONS GO HERE. 
-		<button>Click Here!</button>
-	</header>
+		BUTTONS GO HERE!
 		
+	</header>		
 		<div id="box-1">
+			<button id= "clear-button">CLEAR</button>
 			<div id="mini-box">
+			IMAGES GO HERE
 			</div>
 			<div id="mini-box-2">
 				<form id="animal-form">
 
-					<label for="animal-input">Add Animal here:</label>
+					<label for="animal-input" id="label"><span id="addd">Add</span> Animal here:</label>
 			
 				<input type="text" id="animal-input"></input>
 				<input type="submit" id="add-animal" value="Add a Animal">
@@ -33,80 +34,9 @@
 
 		</div>
 	</div>
-
-	<script type="text/javaScript">
-
-	var animals = ["Dog", "Cat", "Bird", "Falcon", "Bear"];
-
-	function createButtons() {
-
-		$("#main-header").empty();
-
-		for (var i = 0; i < animals.length; i++) {
-			var bt = $("<button>");
-			bt.addClass("animal");
-			bt.attr("data-animal", animals[i]);
-			bt.text(animals[i]);
-			$("#main-header").append(bt);
-		}
-
-		$(".animal").on("click", function () {
-
-		var animal = $(this).attr("data-animal");
-
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
-        animal + "&api_key=dc6zaTOxFJmzC&limit=10";
-
-        $.ajax({
-        	url: queryURL,
-        	method: "GET"
-        }).done(function(response) {
-        	console.log(response);
-
-        	var results = response.data
-
-        	for (var i = 0; i < results.length; i++) {
-        		var animalDiv = $("<div>");
-        		var p = $("<p>").text("Rating: " + results[i].rating);
-
-        		var animalImage = $("<img>");
-
-        		animalImage.attr("src", results[i].images.fixed_height.url);
-
-        		animalDiv.append(p);
-        		animalDiv.append(animalImage);
-        		
-
-        		$("#mini-box").prepend(animalDiv);
-        	}
-
-        })
-
-	})
-
-	}
-	
-	
-	$("#add-animal").on("click", function (event) {
-		event.preventDefault();
-
-		var newAnimal = $("#animal-input").val().trim();
-
-		animals.push(newAnimal);
-
-		createButtons();
-
-	});
-
-	createButtons();
-
-	
-
-
-
-	
+	<script src="js.js" type="text/javaScript">
 		
+	
 	</script>
-	}
 </body>
 </html>

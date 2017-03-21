@@ -1,7 +1,7 @@
 body {
 	margin: auto;
 	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/1e/11/33/1e1133de670625ae50ca6c991a3ec476.jpg");
-
+	
 }
 
 
@@ -29,10 +29,38 @@ button {
 
 }
 
-#label {
-	font-size: 300px;
+#clear-button {
+	height: 20px;
+	width: 100px;
+	padding: 0px;
+	margin: auto;
+	background-color: white;
 	font-weight: bold;
+	margin-left: 50%;
 }
+
+#label {
+	font-size: 30px;
+	font-weight: bold;
+	color:white;
+}
+
+img {
+	display: inline-block;
+	
+}
+
+p {
+	position: relative;
+	color: orange;
+
+}
+
+#addd {
+	color: orange;
+}
+
+
 #main-container {
 	height: 967px;
 	width: 97%;
@@ -47,8 +75,8 @@ button {
 
 #mini-box {
 	float: left;
-	width: 65%;
-	height: 300px;
+	width: 70%;
+	height: 500px;
 	background-color:;
 
 }
