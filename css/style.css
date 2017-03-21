@@ -1,7 +1,7 @@
 body {
 	margin: auto;
-	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/1e/11/33/1e1133de670625ae50ca6c991a3ec476.jpg");
-	
+	background-image: url("https://i.makeagif.com/media/9-10-2015/8j37d5.gif");
+	height: 200px;
 }
 
 
@@ -22,21 +22,17 @@ button {
 	margin-left: 10px;
 	margin-top: 10px;
 	margin-right: 10px;
-	border-radius: 100px;
-	background: #696969;
-	border-color: black;
-
+	border-radius: 50px;
+	background: white;
+	border-color: orange;
+	border-width: 4px;
+	outline: none;
 
 }
 
-#clear-button {
-	height: 20px;
-	width: 100px;
-	padding: 0px;
-	margin: auto;
-	background-color: white;
-	font-weight: bold;
-	margin-left: 50%;
+ol {
+	float: left;
+	margin-right: 15px;
 }
 
 #label {
