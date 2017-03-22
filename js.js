@@ -98,15 +98,6 @@
 
 //createButton function cb
 }
-
-
-
-
-
-
-
-//CREATE FUNCTION FOR STOP/START
-
 	
 	// CREATE NEW BUTTON ANIMAL FUNCTION
 	$("#add-animal").on("click", function (event) {
