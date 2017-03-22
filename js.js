@@ -2,12 +2,7 @@
 	var animals = ["Puppy", "Cat", "Bird", "Snake", "Bear"];
 
 // WAIT FOR DOC TO LOAD
-	$(document).ready(function()
-	{
-
-
-
-	
+	$(document).ready(function(){
 // CREATE BUTTON FUNCTION
 	function createButtons() {
 		//EMPTY OUT AREA FOR BUTTONS
