@@ -28,7 +28,7 @@
 			//GRAB THE ATTR OF DATA-ANIMALS FOR ALL BUTTONS AND STORE INTO VAR ANIMAL
 		var animal = $(this).attr("data-animal");
 		// CREATE LINK URL FOR GIPHYS
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+		var queryURL = "//api.giphy.com/v1/gifs/search?q=" +
         animal + "&api_key=dc6zaTOxFJmzC&limit=10";
         //AJAX FUNCTION GET METHOD 
         $.ajax({
